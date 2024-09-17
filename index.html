@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Поиск информации о стране</h1>
+        <div class="form">
+            <input type="text" id="countryInput" placeholder="Введите название страны" class="input">
+            <button onclick="getCountryInfo()" class="button">Поиск</button>  <!--Функция взятая из js файла getCountryInfo работает при нажатии на кнопку поиска -->
+        </div>
+        <div class="preloader">Загрузка...</div>
+        <ul id="countryInfo" class="country-info"></ul>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
